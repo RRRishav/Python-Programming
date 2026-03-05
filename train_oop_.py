@@ -13,6 +13,18 @@ class Train:
   def fareInfo(self):
     print(f"The price of the train is: {self.fair}")
 
+
+  def Booktick(self):
+    if self.seats > 0:
+      print(f"your ticket booked seat number {self.seats}")
+      self.seats= self.seats -1
+
+    else:
+      print("sorry the train is full")
+
+
 intercity = Train("RAJDHANI",70,300)
 intercity.getDetails()
 intercity.fareInfo()
+intercity.Booktick()
+intercity.Booktick()
